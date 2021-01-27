@@ -1,13 +1,8 @@
 # ASP.NET
-- task: GitHubRelease@1
+- task: GitHubComment@0
   inputs:
     gitHubConnection: 'GitHub - nagsekharreddy'
-    repositoryName: '$(Build.Repository.Name)'
-    action: 'create'
-    target: '$(Build.SourceVersion)'
-    tagSource: 'gitTag'
-    changeLogCompareToRelease: 'lastFullRelease'
-    changeLogType: 'commitBased'
+    repositoryName: 'nagsekharreddy/githubrepo'
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
